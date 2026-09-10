@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Café | Registro</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Café</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Crear cuenta</h2>
+
+            <p>Regístrate para acceder a tu cuenta en Café.</p>
+
+            <form id="form-registro">
+
+                <div>
+                    <label for="txtRun">RUN:</label>
+
+                    <input
+                        type="text"
+                        id="txtRun"
+                        name="run"
+                        maxlength="9"
+                        placeholder="123456785"
+                    >
+
+                    <small id="error-run"></small>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="txtNombre">Nombre:</label>
+
+                    <input
+                        type="text"
+                        id="txtNombre"
+                        name="nombre"
+                        maxlength="50"
+                        placeholder="Ingresa tu nombre"
+                        autocomplete="given-name"
+                    >
+
+                    <small id="error-nombre"></small>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="txtApellido">Apellidos:</label>
+
+                    <input
+                        type="text"
+                        id="txtApellido"
+                        name="apellido"
+                        maxlength="100"
+                        placeholder="Ingresa tus apellidos"
+                        autocomplete="family-name"
+                    >
+
+                    <small id="error-apellido"></small>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="txtEmail">Correo electrónico:</label>
+
+                    <input
+                        type="email"
+                        id="txtEmail"
+                        name="email"
+                        maxlength="100"
+                        placeholder="ejemplo@gmail.com"
+                        autocomplete="email"
+                    >
+
+                    <small id="error-email"></small>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="txtFechaNacimiento">Fecha de nacimiento:</label>
+
+                    <input
+                        type="date"
+                        id="txtFechaNacimiento"
+                        name="fechaNacimiento"
+                    >
+
+                    <small id="error-fecha-nacimiento"></small>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="txtRegion">Región:</label>
+
+                    <select id="txtRegion" name="region">
+                        <option value="">Seleccione una región</option>
+                    </select>
+
+                    <small id="error-region"></small>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="txtComuna">Comuna:</label>
+
+                    <select id="txtComuna" name="comuna">
+                        <option value="">Seleccione una comuna</option>
+                    </select>
+
+                    <small id="error-comuna"></small>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="txtDireccion">Dirección:</label>
+
+                    <input
+                        type="text"
+                        id="txtDireccion"
+                        name="direccion"
+                        maxlength="300"
+                        placeholder="Ingresa tu dirección"
+                        autocomplete="street-address"
+                    >
+
+                    <small id="error-direccion"></small>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="txtPassword">Contraseña:</label>
+
+                    <input
+                        type="password"
+                        id="txtPassword"
+                        name="password"
+                        maxlength="10"
+                        placeholder="Entre 4 y 10 caracteres"
+                        autocomplete="new-password"
+                    >
+
+                    <small id="error-password"></small>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="txtConfirmarPassword">Confirmar contraseña:</label>
+
+                    <input
+                        type="password"
+                        id="txtConfirmarPassword"
+                        name="confirmarPassword"
+                        maxlength="10"
+                        placeholder="Repite tu contraseña"
+                        autocomplete="new-password"
+                    >
+
+                    <small id="error-confirmar-password"></small>
+                </div>
+
+                <br>
+
+                <button type="submit">Crear cuenta</button>
+
+            </form>
+
+            <div id="mensaje-registro"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Café. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/registro.js"></script>
+
+</body>
+
+</html>

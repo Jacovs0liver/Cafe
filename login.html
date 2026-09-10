@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Café | Iniciar sesión</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Café</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <h2>Iniciar sesión</h2>
+
+            <p>
+                Ingresa tus datos para acceder a tu cuenta.
+            </p>
+
+
+            <form id="form-login">
+
+                <div>
+                    <label for="txtEmail">
+                        Correo electrónico:
+                    </label>
+
+                    <input
+                        type="email"
+                        id="txtEmail"
+                        name="email"
+                        maxlength="100"
+                        placeholder="ejemplo@gmail.com"
+                    >
+
+                    <small id="error-email"></small>
+                </div>
+
+
+                <br>
+
+
+                <div>
+                    <label for="txtPassword">
+                        Contraseña:
+                    </label>
+
+                    <input
+                        type="password"
+                        id="txtPassword"
+                        name="password"
+                        maxlength="10"
+                        placeholder="Ingresa tu contraseña"
+                    >
+
+                    <small id="error-password"></small>
+                </div>
+
+
+                <br>
+
+
+                <button type="submit">
+                    Iniciar sesión
+                </button>
+
+            </form>
+
+
+            <div id="mensaje-login"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>&copy; 2026 Café. Todos los derechos reservados.</p>
+
+    </footer>
+
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>

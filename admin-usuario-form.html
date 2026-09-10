@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Café | Crear usuario</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Café</h1>
+
+        <nav>
+            <ul>
+                <li><a href="admin.html">Administración</a></li>
+                <li><a href="admin-productos.html">Productos</a></li>
+                <li><a href="admin-usuarios.html">Usuarios</a></li>
+                <li><a href="index.html">Volver al sitio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Crear usuario</h2>
+
+            <form id="form-usuario">
+
+                <div>
+                    <label for="run">RUN</label>
+                    <input type="text" id="run" name="run">
+                    <p id="error-run"></p>
+                </div>
+
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <p id="error-nombre"></p>
+                </div>
+
+                <div>
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellido" name="apellido">
+                    <p id="error-apellido"></p>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email">
+                    <p id="error-email"></p>
+                </div>
+
+                <div>
+                    <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+                    <p id="error-fecha-nacimiento"></p>
+                </div>
+
+                <div>
+                    <label for="tipo-usuario">Tipo de usuario</label>
+                    <select id="tipo-usuario" name="tipo-usuario">
+                        <option value="">Seleccione un tipo</option>
+                        <option value="Administrador">Administrador</option>
+                        <option value="Cliente">Cliente</option>
+                        <option value="Vendedor">Vendedor</option>
+                    </select>
+                    <p id="error-tipo-usuario"></p>
+                </div>
+
+                <div>
+                    <label for="region">Región</label>
+                    <select id="region" name="region">
+                        <option value="">Seleccione una región</option>
+                    </select>
+                    <p id="error-region"></p>
+                </div>
+
+                <div>
+                    <label for="comuna">Comuna</label>
+                    <select id="comuna" name="comuna">
+                        <option value="">Seleccione una comuna</option>
+                    </select>
+                    <p id="error-comuna"></p>
+                </div>
+
+                <div>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion">
+                    <p id="error-direccion"></p>
+                </div>
+
+                <button type="submit" class="boton">
+                    Guardar usuario
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="informacion">
+
+            <a href="admin-usuarios.html">
+                Volver a usuarios
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Café. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/admin-usuario.js"></script>
+
+</body>
+
+</html>

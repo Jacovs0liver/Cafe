@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Café | Crear producto</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Café</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Crear producto</h2>
+
+            <form id="form-producto">
+
+                <div>
+                    <label for="codigo">Código</label>
+                    <input type="text" id="codigo" name="codigo">
+                    <p id="error-codigo"></p>
+                </div>
+
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <p id="error-nombre"></p>
+                </div>
+
+                <div>
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="descripcion"></textarea>
+                    <p id="error-descripcion"></p>
+                </div>
+
+                <div>
+                    <label for="precio">Precio</label>
+                    <input type="number" id="precio" name="precio" min="0" step="0.01">
+                    <p id="error-precio"></p>
+                </div>
+
+                <div>
+                    <label for="stock">Stock</label>
+                    <input type="number" id="stock" name="stock" min="0" step="1">
+                    <p id="error-stock"></p>
+                </div>
+
+                <div>
+                    <label for="stock-critico">Stock crítico</label>
+                    <input type="number" id="stock-critico" name="stock-critico" min="0" step="1">
+                    <p id="error-stock-critico"></p>
+                </div>
+
+                <div>
+                    <label for="categoria">Categoría</label>
+                    <select id="categoria" name="categoria">
+                        <option value="">Seleccione una categoría</option>
+                        <option value="Café">Café</option>
+                        <option value="Métodos">Métodos</option>
+                        <option value="Molinillos">Molinillos</option>
+                        <option value="Accesorios">Accesorios</option>
+                    </select>
+                    <p id="error-categoria"></p>
+                </div>
+
+                <div>
+                    <label for="imagen">Imagen</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*">
+                    <p id="error-imagen"></p>
+                </div>
+
+                <button type="submit" class="boton">
+                    Guardar producto
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="informacion">
+
+            <a href="admin-productos.html">
+                Volver a productos
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Café. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/admin-producto.js"></script>
+
+</body>
+
+</html>
