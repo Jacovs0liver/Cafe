@@ -390,8 +390,36 @@ function validarRegistro(event) {
         passwordValido &&
         confirmacionValida
     ) {
-        mensajeRegistro.textContent = "Registro válido. Tu cuenta puede ser creada.";
+        let usuariosAdmin = JSON.parse(
+            localStorage.getItem("usuariosAdmin")
+        ) || [];
+
+        const usuario = {
+            run: campoRun.value.trim().toUpperCase(),
+            nombre: campoNombre.value.trim(),
+            apellido: campoApellido.value.trim(),
+            email: campoEmail.value.trim(),
+            fechaNacimiento: campoFechaNacimiento.value,
+            tipoUsuario: "Cliente",
+            region: campoRegion.value,
+            comuna: campoComuna.value,
+            direccion: campoDireccion.value.trim()
+        };
+
+        usuariosAdmin.push(usuario);
+
+        localStorage.setItem(
+            "usuariosAdmin",
+            JSON.stringify(usuariosAdmin)
+        );
+
+        mensajeRegistro.textContent = "Usuario registrado correctamente.";
         mensajeRegistro.style.marginTop = "20px";
+
+        formularioRegistro.reset();
+
+        campoComuna.innerHTML =
+            '<option value="">Seleccione una comuna</option>';
     }
 }
 
